@@ -1,4 +1,3 @@
-
 require 'omniauth-oauth2'
 
 module OmniAuth
@@ -30,7 +29,7 @@ module OmniAuth
       private
 
       def callback_url
-        options.redirect_url || (full_host + script_name + callback_path)
+        options.redirect_url || (full_host + callback_path)
       end
     end
   end

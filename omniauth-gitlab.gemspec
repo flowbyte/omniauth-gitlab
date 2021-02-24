@@ -17,8 +17,9 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ['lib']
 
-  gem.add_dependency 'omniauth', '~> 1.0'
-  gem.add_dependency 'omniauth-oauth2', '~> 1.0'
+  gem.add_dependency 'omniauth', '>= 1.5', '< 3.0'
+  gem.add_dependency 'omniauth-oauth2', '>= 1.4.0', '< 2.0'
+
   gem.add_development_dependency 'rspec', '~> 3.1'
   gem.add_development_dependency 'rspec-its', '~> 1.0'
   gem.add_development_dependency 'simplecov'
